@@ -40,3 +40,14 @@ modifyBtn.addEventListener("click", () => {
   li[1].innerText = "Github";
   li[2].innerText = "Terminal";
 });
+
+const input = document.querySelector("input");
+const addBtn = document.querySelector("#addBtn");
+const dynamicUl = document.querySelector("#dynamicUl");
+
+addBtn.addEventListener("click", () => {
+  const newli = document.createElement("li");
+  newli.innerText = input.value;
+  input.value = "";
+  dynamicUl.appendChild(newli);
+});
