@@ -26,7 +26,20 @@ const persons = [
 */
 
 function findAdults(persons) {
-  // Your code here !
+  let  women = [];
+  let men = [];
+  for (let i = 0; i< persons.length;i++) {
+    if (persons[i].age  >= 18) {
+      if (persons[i].sex  === "female"){
+        women.push(persons[i]);
+    } else if (persons[i].sex === "male") {
+      men.push(persons[i])
+    } else  {
+      console.log("Error: Invalid gender");
+    }
+    }
+  }
+  return [women,men]
 }
 
 module.exports = findAdults;
