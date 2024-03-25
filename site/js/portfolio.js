@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			changeColor.textContent = newName;
 			changeColor.style.color = "white";
+
+			let backgroundColor = document.getElementById("changeColor");
+			backgroundColor.style.backgroundColor = "#750ff7";
 		}
 	});
 });
