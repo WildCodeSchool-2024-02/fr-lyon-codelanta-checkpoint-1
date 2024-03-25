@@ -25,20 +25,25 @@ const persons = [
 
 */
 
-function findAdults(persons) {
-  // Your code here !
-  for (let i = 0; i < persons.length; i++) {
-    if (persons[i].sex === 'female' && persons[i].age >= 18) {
-      let adultFemale = persons.map();
-      console.log(adultFemale);
-    } else if (persons[i].sex=== 'male' && persons[i].age >= 18) {
-      let adultMale = persons.map();
-      console.log(adultMale);
-    }
+// Your code here !
+
+// function findAdults(persons) {
+//   let adultFemale = persons.filter((person) => persons.sex === "female" && persons.age >= 18);
+//   console.log(adultFemale);
+//   let adultMale = persons.filter((person) => persons.sex === "male" && persons.age >= 18);
+//   console.log(adultMale);
+// }
+
+// ou
+
+for (let i = 0; i < persons.length; i++) {
+  if (persons[i].sex === 'female' && persons[i].age >= 18) {
+    let adultFemale = persons.map();
+    console.log(adultFemale);
+  } else if (persons[i].sex === 'male' && persons[i].age >= 18) {
+    let adultMale = persons.map();
+    console.log(adultMale);
   }
 }
-
-
-
 
 module.exports = findAdults;
