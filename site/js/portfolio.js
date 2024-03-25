@@ -51,8 +51,6 @@ frontButton.addEventListener('click', () => {
 
 backButton.addEventListener('click', () => {
     let newTool = document.createElement("li")
-    let backAddingvalue = backAdding.value;
-    console.log(backAddingvalue);
     newTool.innerHTML = backAdding.value;
     backSkills.appendChild(newTool);
 
