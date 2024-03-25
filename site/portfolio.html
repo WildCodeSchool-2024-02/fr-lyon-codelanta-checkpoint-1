@@ -21,19 +21,26 @@
 
     <main>
       <!-- First banner with title, description, avatar and image desktop -->
+      <section class="fullstack">
+        <h1>Fullstack Developper</h1>
+        <p>J'aime bien le dev en vrai</p>
+        <img class="avatar1" src="/site/image/avatar.svg" alt="avatar" width="30%">
+  </section>
       <!-- You can use the avatar image on the folder image -->
       <section>
         <figure class="desktop">
-          <img src="image/desktop.svg" alt="desktop" />
+          <img class="desktopImg" src="image/desktop.svg" alt="desktop" />
         </figure>
       </section>
 
       <!-- Second banner with description of your name and your presentation -->
       <article>
-        <section class="description pink-bg">
-          <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
+        <section id="pink-bg" class="description pink-bg">
+          <h2>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+          <button onclick="modifyName()" id="buttonName">Modify name</button>
         </section>
+        
       </article>
 
       <!-- Bloc of list of skill front end and back end -->
