@@ -161,6 +161,22 @@ button{
 }
 
 @media screen and (max-width:699px){
+
+  body{
+    font-size: 20px;
+  }
+  button{
+    width: 20vw;
+  }
+
+  .firstBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recentWork>p{
+    text-align: center;
+  }
   #desktopImg{
     display: none;
   }
@@ -168,5 +184,24 @@ button{
   .skills{
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+  }
+  .column{
+    width: 80vw;
+  }
+
+  .projectsCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box{
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects{
+    margin-top: 65px;
   }
 }
