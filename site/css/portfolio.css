@@ -130,7 +130,6 @@ p {
   }
   .skills {
     display: flex;
-    display: flexbox;
   }
 }
 @media (max-width : 700) {
