@@ -1,2 +1,6 @@
-let logo = ["avatar.svg", "avatar-bis.png"]
+const avatar = document.getElementsByClassName("avatar");
 
+avatar.addEventListener("click", function () {
+    avatar.src = "image/avatar-bis.png";
+    
+})
