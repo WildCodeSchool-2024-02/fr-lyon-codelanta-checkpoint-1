@@ -28,6 +28,13 @@ p {
   margin-bottom: var(--gutter);
 }
 
+section.firstBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .desktop {
   margin: 0;
@@ -105,6 +112,18 @@ p {
   color: var(--purple);
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects>p {
+  display: block;
+}
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -118,6 +137,21 @@ p {
   color: var(--purple);
 }
 
+.disabled {
+  opacity: 0.3;
+
+}
+
+button {
+  width: 10vw;
+  height: 5vh;
+  background-color: #750ff7;
+  color: white;
+}
+
+
+
+/* Add media screen */
 @media screen and (min-width:700px) {
   header nav {
     justify-content: space-between;
@@ -141,5 +175,9 @@ p {
 
   article.skills {
     flex-direction: row-reverse;
+  }
+
+  .projects {
+    flex-direction: row;
   }
 }
