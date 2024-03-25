@@ -12,4 +12,5 @@ function modifyName(){
     document.getElementById("firstname").style.color = "white";
     let backColor = prompt("Enter a color");
     document.getElementById("pink-bg").style.backgroundColor = backColor;
+    document.querySelectorAll(".pink-text").style.color = backColor;
 }
