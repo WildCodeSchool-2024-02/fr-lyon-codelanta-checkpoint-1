@@ -113,15 +113,38 @@ p {
 /* Step 1 */
 
 nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.first-banner {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between; /* This will ensure the logo and the menu are on opposite ends */
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-content {
+    max-width: 600px;
+}
+
+.first-banner img {
+    max-width: 100px;
+    margin-top: 20px;
 }
 
 @media screen and (min-width: 700px) {
-    .menu {
-        justify-content: flex-end;
+	.menu {
+		justify-content: flex-end;
+	}
+	.first-banner {
+        height: 100vh;
     }
+	.banner-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
-
-
