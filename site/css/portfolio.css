@@ -34,6 +34,8 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  justify-content: center;
 }
 
 .description {
@@ -73,6 +75,7 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  width: 40vw;
 }
 
 .column:first-of-type {
@@ -120,6 +123,14 @@ button{
   border-width: 2px;
   border-radius: 5px;
   color: white;
+}
+
+.recentWork{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
 }
 
 @media screen and (min-width:700px){
