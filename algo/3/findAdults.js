@@ -27,6 +27,18 @@ const persons = [
 
 function findAdults(persons) {
   // Your code here !
+  for (let i = 0; i < persons.length; i++) {
+    if (persons[i].sex === 'female' && persons[i].age >= 18) {
+      let adultFemale = persons.map();
+      console.log(adultFemale);
+    } else if (persons[i].sex=== 'male' && persons[i].age >= 18) {
+      let adultMale = persons.map();
+      console.log(adultMale);
+    }
+  }
 }
+
+
+
 
 module.exports = findAdults;
