@@ -10,6 +10,8 @@ header nav ul {
   align-items: center;
 }
 
+
+
 main {
   padding: calc(var(--gutter) * 3);
 }
@@ -118,3 +120,14 @@ button {
 .problem-no-visible {
   display: none;
 }
+
+/* /////RESPONSIVE /////// */
+
+@media only screen and (min-width: 700px) {
+  header nav ul li{
+    flex-direction: row-reverse;
+    color: red;
+  }
+
+}
+
