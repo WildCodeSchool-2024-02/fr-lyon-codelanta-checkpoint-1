@@ -27,6 +27,10 @@ const persons = [
 
 function findAdults(persons) {
   // Your code here !
+  const femmeAdultes = persons.filter((person) => person.length = "female" && person.sex >= 18);
+  return
+
+
 }
 
 module.exports = findAdults;
