@@ -24,6 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			let backgroundColor = document.getElementById("changeColor");
 			backgroundColor.style.backgroundColor = "#750ff7";
+
+			let pinkElements = document.querySelectorAll(".pink-text");
+			pinkElements.forEach(function (element) {
+				element.style.color = "#750ff7";
+			});
+
+			document.querySelectorAll(".pink-bg").forEach(function (element) {
+				element.style.backgroundColor = "#750ff7";
+			});
 		}
 	});
 });
