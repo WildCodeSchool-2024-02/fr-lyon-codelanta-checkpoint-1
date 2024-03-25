@@ -36,7 +36,7 @@ p {
  
 } 
 a {
-  color: blueviolet;
+  color: var(--purple);
 }
 
 .fullstack {
@@ -88,8 +88,15 @@ margin-bottom: 0;
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
-
+.thecolumn {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: auto;
+}
 .column {
+ 
+ 
   border-left: var(--styledBorder);
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
