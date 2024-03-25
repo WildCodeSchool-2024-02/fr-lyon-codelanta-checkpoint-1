@@ -26,7 +26,24 @@ const persons = [
 */
 
 function findAdults(persons) {
-  // Your code here !
+  let adults_women = [];
+  let adults_men = [];
+  let adults_total = [];
+// Your code here !
+let adults = persons.map(adult => {
+if (adult.age > 18 && adult.sex.includes("female")) {
+adults_women.push(adult);
 }
+
+else if (adult.age > 18 && adult.sex.includes("male")) {
+adults_men.push(adult);
+}
+
+})
+adults_total.push(adults_women)
+adults_total.push(adults_men)
+return adults_total
+}
+
 
 module.exports = findAdults;
