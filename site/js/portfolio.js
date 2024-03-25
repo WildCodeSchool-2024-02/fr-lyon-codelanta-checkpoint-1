@@ -1,4 +1,4 @@
-const avatar = document.querySelector('img');
+const avatar = document.getElementById('avatar');
 const ebuttonName = document.getElementById('buttonName');
 const efirstname = document.getElementById('firstname');
 const ebgColor = document.getElementsByClassName('pink-bg')[0];
@@ -14,7 +14,7 @@ const toolsUl= document.getElementById('front-dev-tools');
 
 
 avatar.addEventListener("click", function() {
-    avatar.src = "../image/avatar-bis.png";
+    avatar.src = "./image/avatar.svg";
 });
 
 ebuttonName.addEventListener("click", function() {
