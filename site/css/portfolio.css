@@ -28,10 +28,15 @@ p {
   margin-bottom: var(--gutter);
 }
 
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+
+.desktop>img {
+  display: none;
 }
 
 .description {
@@ -55,6 +60,10 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills--title {
@@ -107,4 +116,30 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (min-width:700px) {
+  header nav {
+    justify-content: space-between;
+  }
+
+  section.firstBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.firstBanner.img {
+    width: 20vw;
+    height: 20vh;
+  }
+
+  .desktop>img {
+    display: block;
+  }
+
+  article.skills {
+    flex-direction: row-reverse;
+  }
 }
