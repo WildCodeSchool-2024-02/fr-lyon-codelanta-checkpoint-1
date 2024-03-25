@@ -137,6 +137,9 @@ nav {
 .first-banner img {
 	margin-top: 20px;
 }
+.front-end {
+	order: -1;
+}
 
 @media screen and (min-width: 700px) {
 	.menu {
