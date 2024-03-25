@@ -10,6 +10,12 @@
 
   --textAlign: center;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
 
 img {
   max-width: 100%;
@@ -17,6 +23,7 @@ img {
 
 h1 {
   font-size: calc(var(--gutter) * 1.5);
+  
 }
 
 p {
@@ -26,12 +33,32 @@ p {
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+ 
+} 
+a {
+  color: blueviolet;
+}
+
+.fullstack {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#avatar {
+  margin: auto;
+  width: 200px;
+  display: block;
 }
 
 .desktop {
-  margin: 0;
-  margin-top: calc(var(--gutter) * 5);
-  margin-bottom: calc(var(--gutter) * -0.3125);
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 5rem;
+margin-bottom: 0;
 }
 
 .description {
