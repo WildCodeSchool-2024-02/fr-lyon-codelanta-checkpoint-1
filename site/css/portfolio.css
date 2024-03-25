@@ -108,3 +108,52 @@ p {
 .purple-text {
   color: var(--purple);
 }
+/* ============== AJOUTS ==============*/
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.desktop{
+  display: none;
+}
+#avatar {
+  width: 30vw;
+  height: 30vw;
+  ;
+}
+.row {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.disabled {
+  opacity: 50%;
+}
+/*============= MEDIA CORIE ===============*/
+@media screen and (min-width: 700px){
+  .desktop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row { display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .column{ 
+    width: 50vw;
+  }
+  .box_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  }
