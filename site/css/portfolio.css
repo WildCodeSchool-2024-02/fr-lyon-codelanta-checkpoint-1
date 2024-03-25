@@ -15,7 +15,9 @@
   text-align: center;
 }
 
-
+.disabled {
+  opacity: 0.5;
+}
 img {
   max-width: 100%;
 }
@@ -133,6 +135,13 @@ p {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+ }
+ .list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:  1em;
  }
 } 
 
