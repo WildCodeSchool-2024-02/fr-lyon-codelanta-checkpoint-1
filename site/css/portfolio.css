@@ -111,12 +111,11 @@ p {
   color: var(--purple);
 }
 
-.projectsCards > section:first-of-type > a, .projects > section:last-child > a{
+.projectsCards > section:first-of-type > a, .projectsCards > section:last-of-type > a{
   opacity: 0.5;
 }
 
-#promptBtn{
-  background-color: #ffc0cb;
+button{
   border: solid white;
   border-width: 2px;
   border-radius: 5px;

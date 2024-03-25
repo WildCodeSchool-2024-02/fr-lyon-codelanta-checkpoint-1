@@ -12,7 +12,10 @@ const promptBtn = document.querySelector("#promptBtn");
 const firstName = document.querySelector("#firstname");
 const pinkBg = document.querySelectorAll(".pink-bg");
 const pinkText = document.querySelectorAll(".pink-text");
-console.log(pinkText);
+const links = document.querySelectorAll("a");
+
+console.log(links);
+
 promptBtn.addEventListener("click", () => {
   const color = prompt("Enter your color :");
   for (const element of pinkBg) {
@@ -21,7 +24,19 @@ promptBtn.addEventListener("click", () => {
   for (const text of pinkText) {
     text.style.color = color;
   }
-  promptBtn.style.backgroundColor = color;
+  for (const link of links) {
+    link.style.color = color;
+  }
   firstName.innerText = prompt("Enter your name :");
   firstName.style.color = "white";
+});
+
+const modifyBtn = document.querySelector("#modifyBtn");
+const ul = document.querySelector("#front-dev-tools");
+const li = ul.querySelectorAll("li");
+
+modifyBtn.addEventListener("click", () => {
+  li[0].innerText = "VSCode";
+  li[1].innerText = "Github";
+  li[2].innerText = "Terminal";
 });
