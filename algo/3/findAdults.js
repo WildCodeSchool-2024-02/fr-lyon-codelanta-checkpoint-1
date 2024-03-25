@@ -27,6 +27,19 @@ const persons = [
 
 function findAdults(persons) {
   // Your code here !
+  let men = [];
+  let women = [];
+  for (const people of persons) {
+    if (people.age >= 18) {
+      if (people.sex === "male") {
+        men.push(people);
+      } else {
+        women.push(people);
+      }
+    }
+  }
+  let adults = [women, men];
+  return adults;
 }
 
 module.exports = findAdults;
